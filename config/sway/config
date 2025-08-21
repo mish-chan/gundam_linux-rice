@@ -1,8 +1,5 @@
 # ===== START TRAY APPLICATIONS =====
     exec nm-applet
-    exec --no-startup-id pasystray
-    exec --no-startup-id blueman-applet
-
 
 # ===== Variables =====
 
