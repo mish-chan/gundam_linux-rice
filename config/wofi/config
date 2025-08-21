@@ -1,0 +1,14 @@
+show=drun
+term=kitty
+show_all=true
+gtk_dark=false
+location=center
+insensitive=false
+allow_markup=true
+allow_images=true
+line_wrap=word
+lines=6
+width=900
+no_actions=true
+prompt= YOUR WISH IS MY COMMAND
+hide_scroll=true

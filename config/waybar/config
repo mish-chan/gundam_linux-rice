@@ -1,0 +1,98 @@
+{
+  "layer": "top",
+  "spacing": 0,
+  "height": 35,
+  "margin-bottom": 0,
+  "margin-top": 10,
+  "position": "top",
+  "margin-right": 250,
+  "margin-left": 250,
+
+  
+  "modules-left": [
+    "sway/workspaces",
+    "hyprland/workspaces",
+    "battery",
+    "pulseaudio"
+  ],
+  "modules-center": [
+    "custom/applauncher",
+    "custom/browser"
+  ],
+  "modules-right": [
+    "clock",
+    "network",
+    "tray"
+  ],
+
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": false,
+    "tooltip": false
+  },
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": false,
+    "tooltip": false
+  },
+
+
+  "custom/applauncher": {
+    "format": "⟨◉⟩ COMMAND",
+    "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 35",
+    "tooltip": "Command Interface"
+  },
+  "custom/browser":{
+    "format": "⬢ INTERLINK",
+    "on-click": "firefox"
+  },
+
+
+  "tray": {
+    "spacing": 20,
+    "tooltip": true
+  },
+  "clock": {
+    "format": "⟨⧖⟩ STARDATE {:%H:%M}",
+    "tooltip-format": "Mission Time: {:%A, %B %d, %Y}"
+  },
+  "network": {
+    "format-wifi": "⟨◈⟩ UPLINK {bandwidthDownBits}",
+    "format-ethernet": "⟨▣⟩ DIRECT {bandwidthDownBits}", 
+    "format-disconnected": "⟨✗⟩ NO SIGNAL",
+    "interval": 3,
+    "tooltip-format": "Network Status: {essid}\nSignal: {signalStrength}%"
+  },
+  "pulseaudio": {
+    "scroll-step": 5,
+    "max-volume": 150,
+    "format": "⟨{icon}⟩ AUDIO {volume}%",
+    "format-bluetooth": "⟨◎⟩ WIRELESS {volume}%",
+    "format-icons": {
+      "headphone": "♦",
+      "hands-free": "◈", 
+      "headset": "◉",
+      "phone": "▲",
+      "portable": "●",
+      "car": "◆",
+      "default": ["▁", "▃", "▅"]
+    },
+    "format-muted": "⟨◉⟩ MUTED",
+    "on-click": "pavucontrol",
+    "tooltip": true
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "⟨{icon}⟩ PWR {capacity}%",
+    "format-charging": "⟨⚡⟩ CHARGING {capacity}%",
+    "format-plugged": "⟨⚡⟩ DOCKED {capacity}%", 
+    "format-alt": "⟨{icon}⟩ {time} REMAINING",
+    "format-full": "⟨◉⟩ FULL POWER",
+    "format-icons": ["◌", "◐", "◑", "◒", "●"],
+    "tooltip-format": "Power Core: {capacity}%\nTime Remaining: {time}"
+  }
+}

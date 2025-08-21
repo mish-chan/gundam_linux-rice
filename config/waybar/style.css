@@ -1,0 +1,134 @@
+/* General font for the taskbar */
+* {
+  font-family: Maple Mono;
+  font-size: 14px;
+  padding: 0px;
+  background: transparent;
+}
+
+/* Taskbar background */
+window#waybar {
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        
+        rgba(43, 79, 156, 0.75) 10%, 
+        rgba(45, 63, 100, 0.75) 90%,
+
+        transparent 100%);
+    border-radius: 5px;
+    padding: 0px;
+    border-style: none;
+}
+
+/* Most of the stuff... */
+#battery,
+#network,
+#clock,
+#custom-applauncher,
+#custom-browser,
+#tray,
+#workspaces,
+#pulseaudio {
+  background-color: rgba(7, 39, 87, 0.75);
+
+  margin: 6px;
+  margin-right: 0px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: #8aadff;
+
+  border-style: none;
+  transition-duration: 120ms;
+}
+
+#tray {
+  margin-right: 6px;
+}
+
+/*custom hovers and different colors for text, etc*/
+#pulseaudio:hover{
+  background-image: linear-gradient(to bottom, #4e8efc 100%);
+  color: #141216;
+  transition-duration: 120ms;
+}
+
+#custom-browser,#custom-applauncher {
+  font-weight: bold;
+  color: #FFC107 ;
+  transition-duration: 120ms;
+}
+
+#custom-browser:hover,#custom-applauncher:hover {
+  background-image: linear-gradient(to bottom,  #FFC107 100%);
+  color: #141216;
+  transition-duration: 120ms;
+}
+
+/* Tray item style */
+#tray menu {
+  background-color: rgba(7, 39, 87, 0.75);
+  color: #FFC107;
+  padding: 1px;
+}
+
+#tray menu menuitem {
+  background-image: linear-gradient(to bottom, #1d2d6e 0%);
+
+  margin: 3px;
+  color: #ECEFF1;
+  border-radius: 0px;
+  border-style: solid;
+  border-color: #27232b;
+}
+
+#tray menu menuitem:hover {
+  background-image: linear-gradient(to bottom,#4e8efc 100%);
+  color: #27232b;
+  font-weight: bold;
+}
+
+/* workspace tab style */
+#workspaces button {
+  transition-duration: 100ms;
+  all: initial;
+  min-width: 0;
+  font-weight: bold;
+  color: #ECEFF1;
+  margin-right: 0.2cm;
+  margin-left: 0.2cm;
+}
+
+#workspaces button:hover {
+  transition-duration: 120ms;
+  color: #3553cc;
+}
+#workspaces button.focused {
+  color: #F06292;
+  font-weight: bold;
+}
+#workspaces button.active {
+  color: #4e8efc;
+  font-weight: bold;
+}
+#workspaces button.urgent {
+  color: #E91E63;
+}
+
+/* battery */
+#battery {
+  background-color: rgba(7, 39, 87, 0.75);
+  color: rgba(3, 255, 99, 0.75)
+}
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  color: #1d2021;
+  background-color: #E91E63;
+}
+
+/* tooltip */
+tooltip {
+  color: black;
+  background-color: white;
+  text-shadow: none;
+}
