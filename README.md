@@ -7,11 +7,12 @@ Big shoutout to Diinki, their video and repositories taught me how to do my firs
 <h3>Installation</h3>
 Assuming you use Arch Linux, install these through your pacman command: 
 
-`sudo pacman -S sway wofi waybar nemo nautilus kitty dconf dconf-editor`
+`sudo pacman -S sway wofi waybar nemo nautilus kitty dconf dconf-editor nm-applet`
 
 - Window Manger: Sway
 - Terminal: Kitty
 - Task Bar: Waybar
+- Network Manager Tray: nm-applet
 - App Launcher: Wofi
 - File Explorer: Nautilus
 - Configuring GTF themes: dconf and dconf-editor
