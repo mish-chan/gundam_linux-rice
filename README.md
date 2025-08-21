@@ -29,5 +29,10 @@ Overall theme tries to follow a science fiction and space vibe. Heavily inspired
 <img src = "https://github.com/mish-chan/gundam_linux-rice/blob/main/Design%20System/base%20colors.png" alt = "base colors used">
 
 ------------------------------
-<h3>Disclaimer about the GTX Theme</h3>
-I only created a GTX-Theme 3, this means that the theme does not translate onto Nautilus. If you used Nemo, I'm sorry the theme is kind of ugly there! However, it looks very nice on Firefox.
+<h3>About the GTX Theme</h3>
+
+I created a GTX Theme 3 with Themix, but for some reason Github refuses to let me upload it :(
+
+So try creating your own! Mine sucks poo poo anyways :((
+
+Since Themix only goes up to GTX-Theme 3, this means if you do make a theme this way, it does not translate onto Nautilus.
