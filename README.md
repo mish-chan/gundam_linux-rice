@@ -29,9 +29,9 @@ Overall theme tries to follow a science fiction and space vibe. Heavily inspired
 <img src = "https://github.com/mish-chan/gundam_linux-rice/blob/main/Design%20System/base%20colors.png" alt = "base colors used">
 
 ------------------------------
-<h3>About the GTX Theme</h3>
+<h3>About the GTK Theme</h3>
 
-I created a GTX Theme 3 with Themix, but for some reason Github refuses to let me upload it :(
+I created a GTK Theme 3 with Themix, but for some reason Github refuses to let me upload it :(
 
 So try creating your own! Mine sucks poo poo anyways :((
 
